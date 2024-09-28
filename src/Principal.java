@@ -32,5 +32,6 @@ public class Principal {
    //     System.out.println("mi otra pelicula es : " + otraPelicula.nombre);
    //     System.out.println("fecha de lanzamiento es : " + otraPelicula.fechaDeLanzamiento);
 
+        
     }
 }
