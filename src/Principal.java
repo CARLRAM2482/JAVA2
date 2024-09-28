@@ -1,4 +1,5 @@
 import com.aluracursos.screenmatch.modelos.Pelicula;
+import com.aluracursos.screenmatch.modelos.Series;
 
 public class Principal {
     public static void main(String[] args) {
@@ -16,6 +17,15 @@ public class Principal {
 
         System.out.println(miPelicula.getTotalDeLasEvaluaciones());
         System.out.println(miPelicula.calculaMedia());
+
+        Series casaDragon = new Series();
+        casaDragon.setNombre("casa del dragón");
+        casaDragon.setFechaDeLanzamiento(2023);
+        casaDragon.setTemporada(2);
+        casaDragon.setMinutosPorEpisodios(52);
+        casaDragon.setEpisodioPorTemporada(10);
+        casaDragon.muestraFichaTecnica();
+        System.out.println(casaDragon.getDuracionEnMinutos());
 
 
 
