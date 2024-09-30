@@ -1,4 +1,6 @@
+import com.aluracursos.FiltroRecomendaciones;
 import com.aluracursos.screenmacth.calculos.CalculadoraDeTiempos;
+import com.aluracursos.screenmatch.modelos.Episodio;
 import com.aluracursos.screenmatch.modelos.Pelicula;
 import com.aluracursos.screenmatch.modelos.Series;
 
@@ -39,6 +41,16 @@ public class Principal {
         calculadora.incluye(otraPelicula);
         System.out.println("tiempo necesario para ver tus contenidos favoritos  "  +calculadora.getTiempoTotal());
 
+        FiltroRecomendaciones filtroRecomendaciones = new FiltroRecomendaciones();
+        filtroRecomendaciones.filtra(miPelicula);
+
+        Episodio  episodio = new Episodio();
+        episodio.setNumero(1);
+        episodio.setNombre("casa targaryer");
+        episodio.setSeries(casaDragon);
+        episodio.setTotalVisualizaciones(350);
+
+        filtroRecomendaciones.filtra(episodio);
 
 
 
