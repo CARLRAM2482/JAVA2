@@ -69,6 +69,9 @@ public class Principal {
 
         System.out.println(listaDePelicula);
 
+        System.out.println(listaDePelicula.get(0).toString());
+
+
 
     }
 }
