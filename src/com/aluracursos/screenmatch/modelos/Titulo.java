@@ -7,6 +7,13 @@ public class Titulo {
     private    int duracionEnMinutos;
     private   boolean incluidoEnElPlan;
     private double sumaDeLasEvaluacines;
+    private int totalDeEvaluaciones;
+    private int duracionEnMinutoos;
+
+    public Titulo(String nombre, int fechaDeLanzamiento) {
+        this.nombre = nombre;
+        this.fechaDeLanzamiento = fechaDeLanzamiento;
+    }
 
     public String getNombre() {
         return nombre;

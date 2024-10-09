@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class Principal {
     public static void main(String[] args) {
         //Propio tipo de datos una nueva istancia
-        Pelicula miPelicula = new Pelicula();
+        Pelicula miPelicula = new Pelicula("logan", 2021);
         miPelicula.setNombre("logan");
         miPelicula.setFechaDeLanzamiento(2022);
         miPelicula.setDuracionEnMinutos(120);
@@ -23,7 +23,7 @@ public class Principal {
         System.out.println(miPelicula.getTotalDeLasEvaluaciones());
         System.out.println(miPelicula.calculaMedia());
 
-        Series casaDragon = new Series();
+        Series casaDragon = new Series("casa del dragon", 2023);
         casaDragon.setNombre("casa del dragón");
         casaDragon.setFechaDeLanzamiento(2023);
         casaDragon.setTemporada(2);
@@ -32,7 +32,7 @@ public class Principal {
         casaDragon.muestraFichaTecnica();
         System.out.println(casaDragon.getDuracionEnMinutos());
 
-        Pelicula otraPelicula = new Pelicula();
+        Pelicula otraPelicula = new Pelicula("vengadores", 2000);
         otraPelicula.setNombre("Vengadores");
         otraPelicula.setFechaDeLanzamiento(2000);
         otraPelicula.setDuracionEnMinutos(120);
@@ -54,7 +54,7 @@ public class Principal {
 
         filtroRecomendaciones.filtra(episodio);
 
-        var peliculaDeBruno = new Pelicula("el señor de los anillos");
+        var peliculaDeBruno = new Pelicula("el señor de los anillos",2021);
         peliculaDeBruno.setNombre();
         peliculaDeBruno.setDuracionEnMinutos(160);
         peliculaDeBruno.setFechaDeLanzamiento(2001);
