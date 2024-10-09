@@ -54,8 +54,8 @@ public class Principal {
 
         filtroRecomendaciones.filtra(episodio);
 
-        var peliculaDeBruno = new Pelicula();
-        peliculaDeBruno.setNombre("el señor de los anillos");
+        var peliculaDeBruno = new Pelicula("el señor de los anillos");
+        peliculaDeBruno.setNombre();
         peliculaDeBruno.setDuracionEnMinutos(160);
         peliculaDeBruno.setFechaDeLanzamiento(2001);
 
@@ -69,7 +69,9 @@ public class Principal {
 
         System.out.println(listaDePelicula);
 
-        System.out.println(listaDePelicula.get(0).toString());
+        System.out.println( "toString de la pelicula" + listaDePelicula.get(0).toString());
+
+        Object object = peliculaDeBruno;
 
 
 

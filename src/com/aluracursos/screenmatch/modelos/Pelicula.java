@@ -6,6 +6,14 @@ public class Pelicula extends Titulo implements Clacificacion {
 
     private String director;
 
+    public Pelicula(String nombre) {
+        this.setNombre(nombre);
+    }
+
+    public Pelicula() {
+        
+    }
+
     public String getDirector() {
         return director;
     }
@@ -17,5 +25,13 @@ public class Pelicula extends Titulo implements Clacificacion {
     @Override
     public int getClasificacion() {
         return (int) (calculaMedia() / 2);
+    }
+
+    @Override
+    public String toString() {
+        return "Pelicula:" + this.getNombre() +"(" +getFechaDeLanzamiento() +")";
+    }
+
+    public void setNombre() {
     }
 }
