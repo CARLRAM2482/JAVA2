@@ -5,6 +5,9 @@ import com.aluracursos.screenmatch.modelos.Series;
 import com.aluracursos.screenmatch.modelos.Titulo;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
 public class PrincipalConListas {
     public static void main(String[] args) {
@@ -16,7 +19,7 @@ public class PrincipalConListas {
         peliculaDeBruno.evalua(9);
         Series casaDragon = new Series("casa del dragon", 2023);
 
-        ArrayList<Titulo> lista = new ArrayList<>();
+        List<Titulo> lista = new ArrayList<>();
         lista.add(miPelicula);
         lista.add(otraPelicula);
         lista.add(peliculaDeBruno);
@@ -29,5 +32,19 @@ public class PrincipalConListas {
             }
 
         }
+        ArrayList<String> listaDeArtistas = new ArrayList<>();
+        listaDeArtistas.add("penelopes cruz");
+        listaDeArtistas.add("Antonio Banderas");
+        listaDeArtistas.add("Ricardo Darin");
+        System.out.println(listaDeArtistas);
+
+        Collections.sort(listaDeArtistas);
+        System.out.println("lista de artista  ordenada:  "+ listaDeArtistas);
+
+        Collections.sort(lista);
+        System.out.println("lista de titulos ordenados  "+ lista);
+
+        lista.sort(Comparator.comparing(Titulo::getFechaDeLanzamiento));
+        System.out.println("lista ordenada por fecha:  "+lista);
     }
 }
