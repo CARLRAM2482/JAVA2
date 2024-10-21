@@ -1,5 +1,11 @@
 package com.aluracursos.principal;
 
+import com.aluracursos.screenmatch.modelos.Titulo;
+import com.aluracursos.screenmatch.modelos.TituloOmdb;
+import com.google.gson.FieldNamingPolicy;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -25,6 +31,25 @@ public class PrincipalConBusqueda {
                 .build();
         HttpResponse<String> response = client
                 .send(request, HttpResponse.BodyHandlers.ofString());
-        System.out.println(response.body());
+
+        String json = response.body();
+        System.out.println(json);
+
+        Gson gson = new GsonBuilder().setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE).create();
+
+       TituloOmdb miTituloOmdb = gson.fromJson(json, TituloOmdb.class);
+        System.out.println(miTituloOmdb);
+        try {
+            Titulo miTitulo = new Titulo(miTituloOmdb);
+            System.out.println(miTitulo);
+        }catch (NumberFormatException e){
+            System.out.println("ocurio un error: ");
+            System.out.println(e.getMessage());
+        }
+        System.out.println("finalizo la ejecucion del programa!");
+
+
+
+
     }
 }
