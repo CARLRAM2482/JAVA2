@@ -1,0 +1,42 @@
+[
+  {
+    "Nombre": "Matrix",
+    "FechaDeLanzamiento": 1993,
+    "DuracionEnMinutos": 60,
+    "IncluidoEnElPlan": false,
+    "SumaDeLasEvaluacines": 0.0,
+    "TotalDeEvaluaciones": 0,
+    "DuracionEnMinutoos": 0,
+    "TotalDeLasEvaluaciones": 0
+  },
+  {
+    "Nombre": "Encanto",
+    "FechaDeLanzamiento": 2021,
+    "DuracionEnMinutos": 102,
+    "IncluidoEnElPlan": false,
+    "SumaDeLasEvaluacines": 0.0,
+    "TotalDeEvaluaciones": 0,
+    "DuracionEnMinutoos": 0,
+    "TotalDeLasEvaluaciones": 0
+  },
+  {
+    "Nombre": "Logan",
+    "FechaDeLanzamiento": 2017,
+    "DuracionEnMinutos": 137,
+    "IncluidoEnElPlan": false,
+    "SumaDeLasEvaluacines": 0.0,
+    "TotalDeEvaluaciones": 0,
+    "DuracionEnMinutoos": 0,
+    "TotalDeLasEvaluaciones": 0
+  },
+  {
+    "Nombre": "El gato con botas",
+    "FechaDeLanzamiento": 1961,
+    "DuracionEnMinutos": 90,
+    "IncluidoEnElPlan": false,
+    "SumaDeLasEvaluacines": 0.0,
+    "TotalDeEvaluaciones": 0,
+    "DuracionEnMinutoos": 0,
+    "TotalDeLasEvaluaciones": 0
+  }
+]
